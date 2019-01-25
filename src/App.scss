@@ -1,0 +1,271 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400');
+
+// Body
+$body-bg: #f5f8fa;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+$primary-blue: #9EBBDC;
+$primary-blue-background: rgba(158, 188, 220, 0.65);
+$primary-black: #4A4A4A;
+
+html {
+
+}
+body {
+    background: white;
+    font-family: 'Muli', sans-serif;
+}
+
+.navbar-default {
+    margin-bottom: 0;
+    background: transparent;
+    border-color: transparent;
+    height: 100px;
+    .navbar-toggle {
+        border-color: transparent;
+        .icon-bar {
+            background: white;
+            width: 25px;
+        }
+        .middle {
+            background: orange;
+        }
+    }
+    .navbar-toggle:hover {
+        background: transparent;
+    }
+
+
+
+    .container {
+        padding-top: 30px;
+    }
+    .navbar-nav {
+        li {
+            a {
+                color: white;
+            }
+        }
+    }
+
+    .navbar-brand {
+        font-size: 28px;
+        color: #9EBBDC;
+        font-family: 'Muli', sans-serif;
+        font-weight: 200;
+        span {
+            color: white;
+            font-size: 34px;
+        }
+    }
+}
+
+#hero {
+    margin-top: -122px;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://s3.us-east-2.amazonaws.com/iamelimars/pexels-photo-323780.jpeg');
+    background-position: center center;
+    #cover {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(42, 42, 42, 0.7);
+        h1 {
+            top: 47vh;
+            color: white;
+            position: relative;
+            font-family: 'Muli', sans-serif;
+            font-weight: 200;
+            font-size: 3rem;
+        }
+        h3 {
+            top: 50vh;
+            color: white;
+            position: relative;
+            font-family: 'Muli', sans-serif;
+            font-weight: 200;
+            font-size: 2.1rem;
+        }
+        a {
+            // top: 85vh;
+            bottom: 10vh;
+            left: 48vw;
+            position: absolute;
+            color: white;
+        }
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .navbar-default {
+        .navbar-collapse {
+            border-color: transparent;
+            background-color: rgba(1, 1, 1, 0.65)
+        }
+    }
+
+    #hero {
+        #cover {
+            h1 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}
+
+.section {
+    min-height: 50vh;
+    width: 100vw;
+}
+.alt-section {
+    min-height: 50vh;
+    width: 100vw;
+    background: $primary-blue-background;
+}
+.top-footer {
+  min-height: 40vh;
+  width: 100vw;
+}
+.footer {
+  height: 30px;
+  width: 100vw;
+}
+#info {
+    padding-top: 60px;
+    .info-section {
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
+
+#panel {
+    img {
+
+    }
+}
+
+#contact {
+  h3 {
+    font-weight: 200;
+    color: black;
+    margin-top: 100px;
+  }
+  #contact-form {
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    label {
+      font-weight: 300;
+      font-size: 15px;
+      color: black;
+    }
+    input {
+      margin-bottom: 20px;
+      height: 35px;
+      border-color: transparent;
+      background-color: $primary-blue-background;
+    }
+    textarea {
+      margin-bottom: 20px;
+      border-color: transparent;
+      background-color: $primary-blue-background;
+    }
+    #submit {
+      background-color: $primary-black;
+      color: white;
+      text-align: center;
+    }
+  }
+}
+
+#team {
+  h3 {
+    margin-top: 100px;
+    color: black;
+    font-weight: 200;
+    margin-bottom: 50px;
+  }
+  .team-container {
+    margin-bottom: 100px;
+    .team-card {
+      min-height: 350px;
+      background-color: white;
+      margin-bottom: 50px;
+      -webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.26);
+      -moz-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.26);
+      box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.26);
+
+      img {
+        margin-top: 30px;
+      }
+      h4 {
+        margin-top: 40px;
+      }
+      h5 {
+        color: #9B9B9B;
+      }
+    }
+  }
+
+}
+
+
+#footer {
+  background-color: $primary-black;
+  .footer-section {
+    margin-top: 50px;
+    h4 {
+      font-weight: 200;
+      color: white;
+      font-size: 15px;
+    }
+  }
+}
+#bottom-footer {
+  background-color: #1C1C1C;
+}
+
